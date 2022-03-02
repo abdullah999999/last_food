@@ -3,7 +3,6 @@ import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 from telegram.ext import Updater
 
-updater = Updater()
 
 token = '5202377147:AAFc5vd0EaG_DlOgFca4iqXHqxuHqx1mRoI'
 
@@ -162,13 +161,6 @@ def send_text(message):
 مكان التواجد: عين ترما _ ساحة الخزان   
                         رقم التواصل : 2319300\ 2313245\ 2319069\ 0940840001''')
 
-
-bot.start_webhook(listen= "0.0.0.0",
-                port=int(os.environ.get('PORT, 5000')),
-                url_path= '5202377147:AAFc5vd0EaG_DlOgFca4iqXHqxuHqx1mRoI',
-                webhook_url = + '5202377147:AAFc5vd0EaG_DlOgFca4iqXHqxuHqx1mRoI'
-                )
-    
 
 
 bot.polling()
