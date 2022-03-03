@@ -4,7 +4,7 @@ from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 from telegram.ext import Updater
 
 
-token = '5202377147:AAFc5vd0EaG_DlOgFca4iqXHqxuHqx1mRoI'
+token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
 
 bot = telebot.TeleBot(token)
 
@@ -22,7 +22,7 @@ def send_text(message):
 
     if message.text.lower() == 'أرقام الأفرع':
         keyboard2 = telebot.types.ReplyKeyboardMarkup(True)
-        keyboard2.row('مأكولات الشام(2)', 'مأكولات الشام(1)')
+        keyboard2.row('مأكولات الشام(2)', 'مأكولات الشام(0)')
         keyboard2.row('مأكولات الشام(4)', 'مأكولات الشام(3)')
         keyboard2.row('مأكولات الشام(6)', 'مأكولات الشام(5)')
         keyboard2.row('مأكولات الشام(8)', 'مأكولات الشام(7)')
