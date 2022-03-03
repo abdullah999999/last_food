@@ -22,7 +22,7 @@ def send_text(message):
 
     if message.text.lower() == 'أرقام الأفرع':
         keyboard2 = telebot.types.ReplyKeyboardMarkup(True)
-        keyboard2.row('مأكولات الشام(2)', 'مأكولات الشام(0)')
+        keyboard2.row('مأكولات الشام(22)', 'مأكولات الشام(0)')
         keyboard2.row('مأكولات الشام(4)', 'مأكولات الشام(3)')
         keyboard2.row('مأكولات الشام(6)', 'مأكولات الشام(5)')
         keyboard2.row('مأكولات الشام(8)', 'مأكولات الشام(7)')
