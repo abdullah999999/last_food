@@ -44,10 +44,10 @@ def send_text(message):
         keyboard11.row('قالب 10 أشخاص', 'قالب 15 شخص')
         keyboard11.row('قالب حسب الطلب')
         keyboard11.row('رجوع')
-        Photo2 = 'C:\Users\\SONY\\Desktop\\Abdullah\\shams\\pic_sham_food\\photo_2022-03-04_18-34-17.jpg'
+        Photo2 = 'C:\\Users\\SONY\\Desktop\\Abdullah\\shams\\pic_sham_food\\photo_2022-03-04_18-34-17.jpg'
         bot.send_photo(message.chat.id, photo=open(Photo2, 'rb'), reply_markup=keyboard11)
     elif message.text.lower() == 'من نحن؟':
-        Photo = 'C:\Users\\SONY\\Desktop\\Abdullah\\shams\\pic_sham_food\\photo_2022-03-04_18-33-57.jpg'
+        Photo = 'C:\\Users\\SONY\\Desktop\\Abdullah\\shams\\pic_sham_food\\photo_2022-03-04_18-33-57.jpg'
         who_im = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشكوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
         bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_im)
     elif message.text.lower() == 'رجوع':
@@ -126,7 +126,7 @@ def send_text(message):
           وجبة شاورما و2 قطع فتايل وبطاطا وحبش مدخن وسلامي وجبنة شيدر وسلطة روسية وسلطة معكرونة وثوم
            أبيض وثوم حد مع فنجان حد ودبس و2 خبز سياحي و2 بيبسي كولا تنك
                                                                         '''
-        Photo = 'C:\Users\SONY\Desktop\Abdullah\shams\pic_sham_food\\photo_2022-03-04_18-34-03.jpg'
+        Photo = 'C:\\Users\\SONY\\Desktop\\Abdullah\\shams\\pic_sham_food\\photo_2022-03-04_18-34-03.jpg'
         bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_im)
     elif message.text.lower() == 'سندويشة شاورما صغيرة':
         Photo = 'C:\\Users\\SONY\\Desktop\\Abdullah\\testshams\\pics_sham_food\\photo_2022-03-04_18-33-57.jpg'
