@@ -1,5 +1,6 @@
 import os
 import telebot
+from PIL import Image
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
 
@@ -44,8 +45,9 @@ def send_text(message):
         keyboard11.row('قالب 10 أشخاص', 'قالب 15 شخص')
         keyboard11.row('قالب حسب الطلب')
         keyboard11.row('رجوع')
-        Photo2 = 'pic_sham_food\\photo_2022-03-04_18-34-17.jpg'
-        bot.send_photo(message.chat.id, photo=open(Photo2, 'rb'), reply_markup=keyboard11)
+        image = Image.open('pic_sham_food\\photo_2022-03-04_18-34-17.jpg')
+        # Photo2 = 'pic_sham_food\\photo_2022-03-04_18-34-17.jpg'
+        bot.send_photo(message.chat.id, photo=open(image, 'rb'), reply_markup=keyboard11)
     elif message.text.lower() == 'من نحن؟':
         Photo = 'pic_sham_food\\photo_2022-03-04_18-33-57.jpg'
         who_im = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشكوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
