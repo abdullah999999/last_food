@@ -1,3 +1,4 @@
+from fileinput import filename
 import os
 import telebot
 from PIL import Image
@@ -130,8 +131,8 @@ def send_text(message):
         Photo3 = 'pic_sham_food\\photo_2022-03-04_18-34-03.jpg'
         bot.send_photo(message.chat.id, photo=open(Photo3, 'rb'), caption=who_i_am)
     elif message.text.lower() == 'سندويشة شاورما صغيرة':
-        Photo = 'pics_sham_food\\photo_2022-03-04_18-33-57.jpg'
-        bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption='''الأسم :سندويشة شاورما صغيرة
+        Photo4 = 'pic_sham_food\\photo_2022-03-04_18-33-57.jpg'
+        bot.send_photo(message.chat.id, photo=open(Photo4, 'rb'), caption='''الأسم :سندويشة شاورما صغيرة
 الوصف : قطعة من خبزة المشروح مع ثوم ومخلل وشرائح شاورما 
                                             ٍ''')
     elif message.text.lower() == 'مأكولات الشام(1)':
