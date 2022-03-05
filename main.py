@@ -1,4 +1,5 @@
 from fileinput import filename
+from lib2to3.pygram import python_symbols
 import os
 import telebot
 from PIL import Image
@@ -70,7 +71,7 @@ def send_text(message):
     elif message.text.lower() == 'فتايل مطفاية':
         keyboard5 = telebot.types.ReplyKeyboardMarkup(True)
         keyboard5.row('سندويشة وسط فتايل', 'سندويشة كبيرة فتايل', 'وجبة فتايل عربي')
-        keyboard5.row('سندويشة سمون فتايل', 'وجبة فتايل نصف كيلو', 'وجبةفتايل فرط')
+        keyboard5.row('سندويشة سمون فتايل', ' فتايل نصف كيلو', 'وجبةفتايل فرط')
         keyboard5.row('عربي فتايل اكسترا', 'سندويشة فتايل اكسترا')
         keyboard5.row('سندويشة فتايل كبيرة مع بطاطا')
         keyboard5.row('رجوع؟')
@@ -129,12 +130,50 @@ def send_text(message):
            أبيض وثوم حد مع فنجان حد ودبس و2 خبز سياحي و2 بيبسي كولا تنك
                                                                         '''
         Photo3 = 'Image/photo_2022-03-04_18-34-03.jpg'
-        bot.send_photo(message.chat.id, photo=open(Photo3, 'rb'), caption=who_i_am)
+        bot.send_photo(message.chat.id, photo = open(Photo3, 'rb'), caption = who_i_am)
     elif message.text.lower() == 'سندويشة شاورما صغيرة':
         Photo4 = 'Image/photo_2022-03-04_18-33-57.jpg'
-        bot.send_photo(message.chat.id, photo=open(Photo4, 'rb'), caption='''الأسم :سندويشة شاورما صغيرة
+        bot.send_photo(message.chat.id, photo = open(Photo4, 'rb'), caption ='''الأسم :سندويشة شاورما صغيرة
 الوصف : قطعة من خبزة المشروح مع ثوم ومخلل وشرائح شاورما 
                                             ٍ''')
+    elif message.text.lower() == 'فتايل نصف كيلو':
+        who_i_am2 = '''الأسم : فتايل نصف كيلو
+الوصف : نصف كيلو فتايل
+ مطهي على الجريل مع صلصة وحمض
+  مع علبتين ثوم وعلبة مخلل وفنجان حد وفنجان دبس'''
+        Photo5 = 'Image/photo_2022-03-04_18-32-05.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo5, 'rb'), caption = who_i_am2)
+    elif message.text.lower() == 'وجبة فتايل':
+        who_i_am3 = '''الأسم : وجبة فتايل
+الوصف : سندويشة فتايل مقطعة
+ مع 2 قطع محمرة وبطاطا وعلبة سرفيس'''
+        Photo6 = 'Image/photo_2022-03-04_18-32-17.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo6, 'rb'), caption = who_i_am3)
+    elif message.text.lower() == 'وجبة شاورما عربي':
+        who_i_am4 = '''الأسم : وجبة شاورما عربي
+الوصف : سندويشة شاورما كبيرة مقطعة
+ مع 2 قطع محمرة وعلبة سرفيس'''
+        Photo7 = 'Image/photo_2022-03-04_18-32-21.jpg'
+        bot.send_photo(message.chat.id, photo=open(Photo7, 'rb'), caption=who_i_am4)
+    elif message.text.lower() == 'وجبة فرط':
+        who_i_am5 = '''الأسم : وجبة فرط
+الوصف : وجبة شاورما 200 غرام مع بطاطا
+و2 قطع محمرة و 2 علب ثوم
+  وعلبة مخلل وفنجان حد وفنجان دبس'''
+        Photo8 = 'Image/photo_2022-03-04_18-32-25.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo8, 'rb'), caption = who_i_am5)
+    elif message.text.lower() == 'نصف كيلو':
+        who_i_am6 = '''الأسم : نصف كيلو شاورما
+الوصف : نصف كيلو من شرحات الشاورما مع 4 قطع محمرة
+و2 علب ثوم وعلبة مخلل وفنجان حد وفنجان دبس'''
+        Photo9 = 'Image/photo_2022-03-04_18-32-35.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo9, 'rb'), caption = who_i_am6)
+    elif message.text.lower() == 'وجبة كريسبي 5 قطع':
+        who_i_am7 = '''الأسم : وحبة كريسبي 5 قطع
+الوصف : سمون كشف داخلها بطاطا  مع 5 قطع كريسبي
+ فوقهاو علبة سلطة صغيرة وعلبة معكرونة صغيرة وفنجان صوص'''
+        Photo10 = 'Imagephoto_2022-03-04_18-32-39.jpg'
+        bot.send_photo(message.caht.id, photo = open(Photo10, 'rb'), caption = who_i_am7)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
