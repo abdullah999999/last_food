@@ -173,7 +173,7 @@ def send_text(message):
 الوصف : سمون كشف داخلها بطاطا  مع 5 قطع كريسبي
  فوقهاو علبة سلطة صغيرة وعلبة معكرونة صغيرة وفنجان صوص'''
         Photo10 = 'Imagephoto_2022-03-04_18-32-39.jpg'
-        bot.send_photo(message.caht.id, photo = open(Photo10, 'rb'), caption = who_i_am7)
+        bot.send_photo(message.chat.id, photo = open(Photo10, 'rb'), caption = who_i_am7)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
