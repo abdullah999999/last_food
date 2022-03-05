@@ -172,7 +172,7 @@ def send_text(message):
         who_i_am7 = '''الأسم : وحبة كريسبي 5 قطع
 الوصف : سمون كشف داخلها بطاطا  مع 5 قطع كريسبي
  فوقهاو علبة سلطة صغيرة وعلبة معكرونة صغيرة وفنجان صوص'''
-        Photo10 = 'Imag/ephoto_2022-03-04_18-32-39.jpg'
+        Photo10 = 'Image/photo_2022-03-04_18-32-39.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo10, 'rb'), caption = who_i_am7)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
