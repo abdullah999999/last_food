@@ -51,7 +51,7 @@ def send_text(message):
     elif message.text.lower() == 'من نحن؟':
         # Photo = 'Image\\photo_2022-03-04_18-33-57.jpg'
         who_i_am = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشكوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
-        bot.send_photo(message.chat.id, photo=open('Image\\photo_2022-03-04_18-33-57.jpg', 'rb'), caption=who_i_am)
+        bot.send_photo(message.chat.id, photo=open('Image/photo_2022-03-04_18-33-57.jpg', 'rb'), caption=who_i_am)
     elif message.text.lower() == 'رجوع':
         keyboard = telebot.types.ReplyKeyboardMarkup(True)
         keyboard.row('الطعام', 'أرقام الأفرع')
