@@ -63,7 +63,7 @@ def send_text(message):
         keyboard4 = telebot.types.ReplyKeyboardMarkup(True)
         keyboard4.row('سندويشة شاورما صغيرة', 'سندويشة شاورما كبيرة', 'وجبة شاورما عربي')
         keyboard4.row('سندويشة شاورما اكسترا', 'وجبة شاروما اكسترا', 'وجبة فرط')
-        keyboard4.row('سندويشة سمون', 'سمون عربي', 'نصف كيلوا')
+        keyboard4.row('سندويشة سمون', 'سمون عربي', 'نصف كيلو')
         keyboard4.row('ماريا حد', 'ماريا قشقوان', 'ماريا خضار')
         keyboard4.row('ماريا الشام', 'بيتزا الشام', 'سندويش مع كبة')
         keyboard4.row('رجوع؟')
@@ -143,7 +143,7 @@ def send_text(message):
   مع علبتين ثوم وعلبة مخلل وفنجان حد وفنجان دبس'''
         Photo5 = 'Image/photo_2022-03-04_18-32-05.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo5, 'rb'), caption = who_i_am2)
-    elif message.text.lower() == 'وجبة فتايل':
+    elif message.text.lower() == 'وجبة فتايل عربي':
         who_i_am3 = '''الأسم : وجبة فتايل
 الوصف : سندويشة فتايل مقطعة
  مع 2 قطع محمرة وبطاطا وعلبة سرفيس'''
