@@ -1,8 +1,5 @@
-from fileinput import filename
-from lib2to3.pygram import python_symbols
 import os
 import telebot
-from PIL import Image
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
 
