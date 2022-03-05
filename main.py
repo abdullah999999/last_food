@@ -45,13 +45,12 @@ def send_text(message):
         keyboard11.row('قالب 10 أشخاص', 'قالب 15 شخص')
         keyboard11.row('قالب حسب الطلب')
         keyboard11.row('رجوع')
-        image = Image.open('pic_sham_food\\photo_2022-03-04_18-34-17.jpg')
-        # Photo2 = 'pic_sham_food\\photo_2022-03-04_18-34-17.jpg'
-        bot.send_photo(message.chat.id, photo=open(image, 'rb'), reply_markup=keyboard11)
+        Photo2 = 'pic_sham_food\\photo_2022-03-04_18-34-17.jpg'
+        bot.send_photo(message.chat.id, photo=open(Photo2, 'rb'), reply_markup=keyboard11)
     elif message.text.lower() == 'من نحن؟':
         Photo = 'pic_sham_food\\photo_2022-03-04_18-33-57.jpg'
-        who_im = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشكوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
-        bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_im)
+        who_i_am = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشكوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
+        bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_i_am)
     elif message.text.lower() == 'رجوع':
         keyboard = telebot.types.ReplyKeyboardMarkup(True)
         keyboard.row('الطعام', 'أرقام الأفرع')
@@ -123,13 +122,13 @@ def send_text(message):
         keyboard3.row('رجوع')
         bot.send_message(message.chat.id, 'أختار ما تريد :',  reply_markup=keyboard3)
     elif message.text.lower() == 'وجبة عريس':
-        who_im = '''الأسم : وجبة عريس
+        who_i_am = '''الأسم : وجبة عريس
  الوصف : نصف فروج بروستد و3 قطع كريسبي و3 قطع اسكالوب وسيخ شيش ,
           وجبة شاورما و2 قطع فتايل وبطاطا وحبش مدخن وسلامي وجبنة شيدر وسلطة روسية وسلطة معكرونة وثوم
            أبيض وثوم حد مع فنجان حد ودبس و2 خبز سياحي و2 بيبسي كولا تنك
                                                                         '''
-        Photo = 'pic_sham_food\\photo_2022-03-04_18-34-03.jpg'
-        bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_im)
+        Photo3 = 'pic_sham_food\\photo_2022-03-04_18-34-03.jpg'
+        bot.send_photo(message.chat.id, photo=open(Photo3, 'rb'), caption=who_i_am)
     elif message.text.lower() == 'سندويشة شاورما صغيرة':
         Photo = 'pics_sham_food\\photo_2022-03-04_18-33-57.jpg'
         bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption='''الأسم :سندويشة شاورما صغيرة
