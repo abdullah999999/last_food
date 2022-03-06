@@ -48,7 +48,8 @@ def send_text(message):
     elif message.text == 'جديدنا':
         keyboard12 = telebot.types.ReplyKeyboardMarkup(True)
         keyboard12.row('وجبة عريس')
-        bot.send_message(message.chat.id, 'كل ما هو جديد تجده هنا', reply_markup = keyboard12)
+        keyboard12.row('رجوع')
+        bot.send_message(message.chat.id, 'كل ما هو جديد تجده هنا : ', reply_markup = keyboard12)
     elif message.text.lower() == 'من نحن؟':
         Photo = 'Image/photo_2022-03-04_18-33-57.jpg'
         who_i_am = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشهوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
