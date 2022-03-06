@@ -89,6 +89,7 @@ def send_text(message):
         keyboard7.row('وجبة فرانشيسكو', 'وجبة مكسيكي', 'وجبة كرنشي')
         keyboard7.row('وجبة فاهينا', 'وجبة ناغيت', 'وجبة ماليبو')
         keyboard7.row('وجبة ماكنوم', 'وجبة توستر', 'وجبة همبرغر')
+        keyboard7.row('وجبة شيش طاووق 3 سياخ')
         keyboard7.row('رجوع؟')
         bot.send_message(message.chat.id, 'الأصناف :', reply_markup=keyboard7)
     elif message.text.lower()  == 'فروج':
@@ -118,6 +119,7 @@ def send_text(message):
         keyboard3 = telebot.types.ReplyKeyboardMarkup(True)
         keyboard3.row('شاورما دجاج', 'فتايل مطفاية', 'فروج')
         keyboard3.row('سناك', 'وجبات سناك', 'مقبلات')
+        keyboard3.row('وجبات مميزة')
         keyboard3.row('رجوع')
         bot.send_message(message.chat.id, 'أختار ما تريد :',  reply_markup=keyboard3)
     elif message.text.lower() == 'وجبة عريس':
@@ -171,6 +173,39 @@ def send_text(message):
  فوقهاو علبة سلطة صغيرة وعلبة معكرونة صغيرة وفنجان صوص'''
         Photo10 = 'Image/photo_2022-03-04_18-32-39.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo10, 'rb'), caption = who_i_am7)
+    elif message.text.lower()  == 'ماريا الشام':
+        who_i_am8 = '''الأسم : ماريا الشام
+الوصف : رغيفين من الخبز محتواهما
+فطر وقشقوان وذرة وشرائح شاورما مع بطاطا
+ وعلبة ثوم وعلبة مخلل وفنجان حد وفنجان دبس'''
+        Photo11 = 'Image/photo_2022-03-04_18-33-02.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo11, 'rb'), caption = who_i_am8)
+    elif message.text.lower() == 'وجبة شيش طاووق 3 سياخ':
+        who_i_am9 = '''الأسم : وجبة شيش طاووق 3 سياخ
+الوصف : سمون كشف داخلها بطاطا وفوقها
+ 3 سياخ شيش طاووق
+ مع علبة سلطة وعلبة معكرونة وفنجان ثوم حد و2 ظرف كتشب'''
+        Photo12 = 'Image/photo_2022-03-04_18-32-46.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo12, 'rb'), caption = who_i_am9)
+    elif message.text.lower() == 'سندويشة اسكالوب':
+        who_i_am10 = '''الأسم : سندويشة اسكالوب
+الوصف : سمون مع ثوم وسلطة وكتشب
+داخلها بطاطا وقطع كريسبي'''
+        Photo13 = 'Image/photo_2022-03-04_18-32-42.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo13, 'rb'), caption = who_i_am10)
+    elif message.text.lower() == 'سندويشة ناغيت':
+        who_i_am11 = '''الأسم : سندويشة ناغيت
+الوصف : سمون مع ثوم وسلطة
+وبطاطا وخس وقطع الناغيت مع جبنة الشيدر'''
+        Photo14 = 'Image/photo_2022-03-04_18-33-17.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo14, 'rb'), caption = who_i_am11)
+    elif message.text == 'وجبة ناغيت':
+        who_i_am12 = '''الأسم : وجبة ناغيت
+الوصف : سمون كشف مع بطاطا وقطع الناغيت
+مع جبنة الشيدر وعلبة سلطة
+و 2 قطع خبز وفنجان ثوم حد وظرف كتشب'''
+        Photo15 = 'Image/photo_2022-03-04_18-33-06.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo15, 'rb'), caption = who_i_am12)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
