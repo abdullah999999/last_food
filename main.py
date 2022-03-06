@@ -72,7 +72,7 @@ def send_text(message):
     elif message.text.lower() == 'فتايل مطفاية':
         keyboard5 = telebot.types.ReplyKeyboardMarkup(True)
         keyboard5.row('سندويشة وسط فتايل', 'سندويشة كبيرة فتايل', 'وجبة فتايل عربي')
-        keyboard5.row('سندويشة سمون فتايل', ' فتايل نصف كيلو', 'وجبةفتايل فرط')
+        keyboard5.row('سندويشة سمون فتايل', ' فتايل نصف كيلو', 'وجبة فتايل فرط')
         keyboard5.row('عربي فتايل اكسترا', 'سندويشة فتايل اكسترا')
         keyboard5.row('سندويشة فتايل كبيرة مع بطاطا')
         keyboard5.row('رجوع؟')
