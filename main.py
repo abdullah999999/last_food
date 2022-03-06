@@ -213,6 +213,13 @@ def send_text(message):
 و 2 قطع خبز وفنجان ثوم حد وظرف كتشب'''
         Photo15 = 'Image/photo_2022-03-04_18-33-06.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo15, 'rb'), caption = who_i_am12)
+    elif message.text == 'وجبة فتايل فرط':
+        who_i_am13 = '''الأسم : وجبة فتايل فرط
+الوصف : وجبة فتايل 200 غرام مع بطاطا
+و2 قطع خبز وعلبة ثوم وعلبة مخلل
+وفنجان حد وفنجان دبس'''
+        Photo16 = 'Image/photo_2022-03-04_18-32-31.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo16, 'rb'), caption = who_i_am13)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
