@@ -39,13 +39,16 @@ def send_text(message):
         bot.send_message(message.chat.id, 'أختار ما تريد :',  reply_markup=keyboard3)
     elif message.text.lower() == 'قوالب للمناسبات':
         keyboard11 = telebot.types.ReplyKeyboardMarkup(True)
-        keyboard11.row('وجبة عريس', 'قالب 3 أشخاص')
+        keyboard11.row('قالب حسب الطلب', 'قالب 3 أشخاص')
         keyboard11.row('قالب 5 أشخاص', 'قالب 8 أشخاص')
         keyboard11.row('قالب 10 أشخاص', 'قالب 15 شخص')
-        keyboard11.row('قالب حسب الطلب')
         keyboard11.row('رجوع')
         Photo2 = 'Image/photo_2022-03-04_18-34-17.jpg'
         bot.send_photo(message.chat.id, photo=open(Photo2, 'rb'), reply_markup=keyboard11)
+    elif message.text == 'جديدنا':
+        keyboard12 = telebot.types.ReplyKeyboardMarkup(True)
+        keyboard12.row('وجبة عريس')
+        bot.send_message(message.chat.id, 'كل ما هو جديد تجده هنا', reply_markup = keyboard12)
     elif message.text.lower() == 'من نحن؟':
         Photo = 'Image/photo_2022-03-04_18-33-57.jpg'
         who_i_am = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشهوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
@@ -113,6 +116,9 @@ def send_text(message):
         keyboard10.row('ماريا قشقوان', 'كبة محشية شاورما', 'سندويشة كبة')
         keyboard10.row('سندويشة اكسترا', 'سندويشة فتايل اكسترا')
         keyboard10.row('وجبة عربي اكسترا', 'وجبة فتايل اكسترا')
+        keyboard10.row('قالب حسب الطلب', 'قالب 3 أشخاص', 'وجبة عريس')
+        keyboard10.row('قالب 5 أشخاص', 'قالب 8 أشخاص', 'قالب 10 اشخاص')
+        keyboard10.row('قالب 15 شخص')
         keyboard10.row('رجوع؟')
         bot.send_message(message.chat.id, 'الأصناف', reply_markup=keyboard10)
     elif message.text.lower() == 'رجوع؟':
