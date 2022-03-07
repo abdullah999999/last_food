@@ -1,4 +1,5 @@
 import os
+from readline import set_completion_display_matches_hook
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
@@ -93,7 +94,7 @@ def send_text(message):
         keyboard7.row('وجبة فرانشيسكو', 'وجبة مكسيكي', 'وجبة كرنشي')
         keyboard7.row('وجبة فاهينا', 'وجبة ناغيت', 'وجبة ماليبو')
         keyboard7.row('وجبة ماكنوم', 'وجبة توستر', 'وجبة همبرغر')
-        keyboard7.row('وجبة شيش طاووق 3 سياخ')
+        keyboard7.row('وجبة شيش طاووق 3 سياخ', 'وجبة زنجر')
         keyboard7.row('رجوع؟')
         bot.send_message(message.chat.id, 'الأصناف :', reply_markup=keyboard7)
     elif message.text.lower()  == 'فروج':
@@ -227,6 +228,36 @@ def send_text(message):
 سلطة وعلبة نص بنص وفنجان حد وفنجان دبس'''
         Photo17 = 'Image/photo_2022-03-04_18-32-50.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo17, 'rb'), caption = who_i_am14)
+    elif message.text == 'سندويشة زنجر':
+        who_i_am15 = '''الأسم : سندويشة زنجر
+الوصف : سمون مع بطاطا قطع زنجر
+مع حبش وجبنة الشيدر '''
+        Photo18 = 'Image/photo_2022-03-04_18-33-30.jpg'
+        bot.send_photo(message.chat.id,photo = open(Photo18, 'rb'), caption = who_i_am15)
+    elif message.text == 'وجبة زنجر':
+        who_i_am16 = '''الأسم : وجبة زنجر
+الوصف : بطاطا وقطع الزنجر فوقها قطع الحبش
+وجبنة الشيدر مع علبة سلطة و 2 قطع خبز وفنجان ثوم حد و 2 ظرف كتشب'''
+        Photo19 = 'Image/photo_2022-03-04_18-33-10.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo19, 'rb'), caption = who_i_am16)
+    elif message.text == 'سندويشة كريسبي':
+        who_i_am17 = '''الأسم : سندويشة كريسبي
+الوصف : سمون مع بطاطا
+وسلطة وكتشب وثوم وخس وقطع الكريسبي'''
+        Photo20 = 'Image/photo_2022-03-04_18-33-34.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo20, 'rb'), caption = who_i_am17)
+    elif message.text == 'سندويشة توستر':
+        who_i_am18 = '''الأسم : سندويشة توستر
+الوصف : سمون مع بطاطا وخس وسلطة
+وثوم وذرة مع حبش وجبنة الشيدر وقطع التوستر '''
+        Photo21 = 'Image/photo_2022-03-04_18-33-13.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo21, 'rb'), caption = who_i_am18)
+    elif message.text == 'قالب 5 أشخاص':
+        who_i_am19 = '''الأسم : قالب 5 أشخاص
+الوصف : 14 سندويشة شاورما مع بطاطا وسرفيس
+'''
+        Photo22 = 'Image/photo_2022-03-04_18-34-20.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo22, 'rb'), caption = who_i_am19)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
