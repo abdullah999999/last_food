@@ -254,10 +254,21 @@ def send_text(message):
         bot.send_photo(message.chat.id, photo = open(Photo21, 'rb'), caption = who_i_am18)
     elif message.text == 'قالب 5 أشخاص':
         who_i_am19 = '''الأسم : قالب 5 أشخاص
-الوصف : 14 سندويشة شاورما مع بطاطا وسرفيس
+الوصف : 14 سندويشة شاورما
+ مع بطاطا وسرفيس
 '''
         Photo22 = 'Image/photo_2022-03-04_18-34-20.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo22, 'rb'), caption = who_i_am19)
+    elif message.text == 'قالب 8 أشخاص':
+        who_i_am20 = '''الأسم : قالب 8 أشخاص
+الوصف : 20 سندويشة شاورما
+مع بطاطا وسرفيس'''
+        Photo23 = 'Image/photo_2022-03-04_18-34-48.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo23, 'rb'), caption = who_i_am20)
+    elif message.text == 'قالب 10 أشخاص':
+        who_i_am21 = '''الأسم : قالب 10 أشخاص'''
+        Photo24 = 'Image/photo_2022-03-04_18-34-10.jpg'
+        bot.send_photo(message.chat.id, photo = open(Photo24, 'rb'), caption = who_i_am21)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
