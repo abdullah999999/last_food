@@ -119,7 +119,7 @@ def send_text(message):
         keyboard10.row('سندويشة اكسترا', 'سندويشة فتايل اكسترا')
         keyboard10.row('وجبة عربي اكسترا', 'عربي فتايل اكسترا')
         keyboard10.row('قالب حسب الطلب', 'قالب 3 أشخاص', 'وجبة عريس')
-        keyboard10.row('قالب 5 أشخاص', 'قالب 8 أشخاص', 'قالب 10 اشخاص')
+        keyboard10.row('قالب 5 أشخاص', 'قالب 8 أشخاص', 'قالب 10 أشخاص')
         keyboard10.row('قالب 15 شخص')
         keyboard10.row('رجوع؟')
         bot.send_message(message.chat.id, 'الأصناف', reply_markup=keyboard10)
