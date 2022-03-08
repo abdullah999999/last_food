@@ -4,7 +4,7 @@ from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
 token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
 
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(os.environ['TOKEN'])
 
 
 
