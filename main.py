@@ -1,20 +1,6 @@
-import sys
-import requests
-from apscheduler.schedulers.blocking import BlockingScheduler
 import os
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
-
-sched = BlockingScheduler()
-
-@sched.scheduled_job('interval', minutes=3)
-def timed_job():
-    try:
-        request = requests.get(url='https://royal-tag-services.herokuapp.com/api/sms-service/scheduler/')
-    except Exception as e:
-        print >>sys.stderr, 'scheduler request failed'
-
-sched.start()
 
 
 token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'

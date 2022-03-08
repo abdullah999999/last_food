@@ -1,2 +1,2 @@
-web: python main.py --log-file -
+web: python main.py $PORT
 worker: python main.py
