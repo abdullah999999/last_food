@@ -1,5 +1,4 @@
 import os
-from readline import set_completion_display_matches_hook
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
