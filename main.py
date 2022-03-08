@@ -1,8 +1,8 @@
 import os
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
+from telegram.ext import Updater
 
-token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
 
 bot = telebot.TeleBot(os.environ['TOKEN'])
 
