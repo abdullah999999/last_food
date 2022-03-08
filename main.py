@@ -1,13 +1,9 @@
 import os
-from tokenize import Token
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
-TOKEN = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
-
-bot = telebot.TeleBot(os.environ['TOKEN'])
-
-
+token = os.environ.get('TOKEN')
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(message):
