@@ -1,11 +1,29 @@
 import os
 import telebot
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
+import ssl
+import requests
+from aiohttp import web
 
+WEBHOOK_HOST = 'pdf-tg-bot.herokuapp.com'
+WEBHOOK_PORT = os.getenv('PORT', default=8443)  # 443, 80, 88 or 8443 (port need to be 'open')
+WEBHOOK_LISTEN = '0.0.0.0'
+
+WEBHOOK_SSL_CERT = './webhook_cert.pem'  # Path to the ssl certificate
+WEBHOOK_SSL_PRIV = './webhook_pkey.pem'  # Path to the ssl private key
+
+WEBHOOK_URL_BASE = "https://{}:{}".format(WEBHOOK_HOST, WEBHOOK_PORT)
+
+
+app = web.Application()
+
+# Build ssl context
+context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+context.load_cert_chain(WEBHOOK_SSL_CERT, WEBHOOK_SSL_PRIV)
 
 token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
-
-bot = telebot.TeleBot(token)
+WEBHOOK_URL_PATH = "/{}/".format(token)
+bot = telebot.TeleBot(token,parse_mode = None)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -325,6 +343,13 @@ def send_text(message):
 مكان التواجد: عين ترما _ ساحة الخزان   
                         رقم التواصل : 2319300 \ 2313245 \ 2319069 \ 0940840001''')
 
+
+web.run_app(
+    app,
+    host=WEBHOOK_LISTEN,
+    port=WEBHOOK_PORT,
+    ssl_context=context,
+)
 bot.remove_webhook()
 if __name__ == '__main__':
     bot.polling(none_stop= True)
