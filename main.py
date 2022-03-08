@@ -326,6 +326,7 @@ def send_text(message):
 مكان التواجد: عين ترما _ ساحة الخزان   
                         رقم التواصل : 2319300 \ 2313245 \ 2319069 \ 0940840001''')
 
+bot.remove_webhook()
+if __name__ == '__main__':
+    bot.polling(none_stop= True)
 
-
-bot.polling()
