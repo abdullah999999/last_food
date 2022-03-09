@@ -1,9 +1,13 @@
 import os
 import telebot
+from dotenv import load_dotenv
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
-token = os.environ.get('TOKEN')
-bot = telebot.TeleBot(token)
+# token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['start'])
 def start(message):
