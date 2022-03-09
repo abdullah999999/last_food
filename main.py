@@ -3,7 +3,7 @@ import telebot
 from dotenv import load_dotenv
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
-# token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
+
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
