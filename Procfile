@@ -1,2 +1,2 @@
-web: python main.py $PORT
-worker: python main.py
+web: python3 main.py $PORT
+worker: python3 main.py
