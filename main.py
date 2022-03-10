@@ -1,13 +1,15 @@
+from ensurepip import version
 import os
 import telebot
 from dotenv import load_dotenv
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
-# token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY")
-bot = telebot.TeleBot(API_KEY)
+Token = os.getenv('API_KEY')
+BOT_TOKEN = Token
+
+bot = telebot.TeleBot(token = BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
