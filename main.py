@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
 
-load_dotenv()
+# load_dotenv()
 
-Token = os.environ.get('API_KEY')
-BOT_TOKEN = Token
+# Token = os.environ.get('API_KEY')
+BOT_TOKEN = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
 
 bot = telebot.TeleBot(token = BOT_TOKEN)
 
