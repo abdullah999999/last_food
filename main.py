@@ -7,9 +7,9 @@ from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 # load_dotenv()
 
 # Token = os.environ.get('API_KEY')
-BOT_TOKEN = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
+token = '5226335964:AAGzbUWtFq9OIOE0Q4dWvxlRSvOUXiAykd0'
 
-bot = telebot.TeleBot(token = BOT_TOKEN)
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(message):
