@@ -1,4 +1,3 @@
-from ensurepip import version
 import os
 import telebot
 from dotenv import load_dotenv
