@@ -1,13 +1,10 @@
-from lib2to3.pgen2 import token
 import os
 import telebot
 from dotenv import load_dotenv
 from telegram import MessageEntity, ReplyKeyboardMarkup, ReplyMarkup
 
 load_dotenv()
-token_api = os.getenv()
 
-print(os.environ['TOKEN'])
 bot = telebot.TeleBot(os.environ['TOKEN'])
 
 @bot.message_handler(commands=['start'])
