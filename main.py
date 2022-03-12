@@ -11,6 +11,7 @@ bot = telebot.TeleBot(os.environ['TOKEN'])
 def start(message):
 
     keyboard = telebot.types.ReplyKeyboardMarkup(True)
+    keyboard.row('مأكولات الشام عين الكرش (Facebook)')
     keyboard.row('الطعام', 'أرقام الأفرع')
     keyboard.row('جديدنا', 'قوالب للمناسبات')
     keyboard.row('من نحن؟', 'شكاوي وإدارة')
@@ -29,6 +30,10 @@ def send_text(message):
         keyboard2.row('مأكولات الشام _ عين ترما', 'مأكولات الشام _ الصناعة')
         keyboard2.row('رجوع',)
         bot.send_message(message.chat.id, 'أختار الفرع الذي تريده :', reply_markup=keyboard2)
+    elif message.text == 'مأكولات الشام عين الكرش (Facebook)':
+        who_i_am23 = ''' صفحتنا على ال(Facebook) لمتابعة كل جديد وعروضنا المغرية
+         https://www.facebook.com/%D9%85%D8%A3%D9%83%D9%88%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A7%D9%85-%D8%A7%D9%84%D9%81%D8%B1%D8%B9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A-654805151316348/?ti=as'''
+        bot.send_message(message.chat.id, who_i_am23,)
     elif message.text.lower() == 'الطعام':
         keyboard3 = telebot.types.ReplyKeyboardMarkup(True)
         keyboard3.row('شاورما دجاج', 'فتايل مطفاية', 'فروج')
