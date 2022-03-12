@@ -13,7 +13,7 @@ def start(message):
     keyboard = telebot.types.ReplyKeyboardMarkup(True)
     keyboard.row('الطعام', 'أرقام الأفرع')
     keyboard.row('جديدنا', 'قوالب للمناسبات')
-    keyboard.row('من نحن؟')
+    keyboard.row('من نحن؟', 'شكاوي وإدارة')
     bot.send_message(message.chat.id, 'مرحبا بك في مأكولات الشام', reply_markup=keyboard)
     
 
@@ -53,11 +53,15 @@ def send_text(message):
         Photo = 'Image/photo_2022-03-04_18-33-57.jpg'
         who_i_am = ''' تم تأسيس المطعم في عام 1989 من قبل الأخويين محمد أسعد اللحام ومحي الدين اللحام المشهوران أبو أسعد اللحام وأبو عمار اللحام تم تأسيس أول فرع في مدينة دمشق شارع بغداد حي عين الكرش'''
         bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_i_am)
+    elif message.text == 'شكاوي وإدارة':
+        who_i_am22 = '''للاستفسار عن أي ملاحظة أو شكوى التواصل على الرقم التالي :
+        0940840001'''
+        bot.send_message(message.chat.id, who_i_am22)
     elif message.text.lower() == 'رجوع':
         keyboard = telebot.types.ReplyKeyboardMarkup(True)
         keyboard.row('الطعام', 'أرقام الأفرع')
         keyboard.row('جديدنا', 'قوالب للمناسبات')
-        keyboard.row('من نحن؟')
+        keyboard.row('من نحن؟', 'شكاوي وإدارة')
         bot.send_message(message.chat.id, ' القائمة الرئيسية :', reply_markup= keyboard)
     elif message.text.lower() == 'شاورما دجاج':
         keyboard4 = telebot.types.ReplyKeyboardMarkup(True)
@@ -267,9 +271,9 @@ def send_text(message):
         who_i_am21 = '''الأسم : قالب 10 أشخاص'''
         Photo24 = 'Image/photo_2022-03-04_18-34-10.jpg'
         bot.send_photo(message.chat.id, photo = open(Photo24, 'rb'), caption = who_i_am21)
-    elif message.text.lower() == 'مأكولات الشام(1)':
+    elif message.text.lower() == 'مأكولات الشام _ عين الكرش':
         bot.send_location(message.chat.id, 33.520175,36.298052)
-        bot.send_message(message.chat.id, '''الأسم: مأكولات الشام _ عين الكرش
+        bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
 مكان التواجد: شارع بغداد _ عين الكرش _ جانب المشفى العربي 
                         رقم التواصل : 2319300 \ 231324 \ 2319069 \ 0940840001''')
 
