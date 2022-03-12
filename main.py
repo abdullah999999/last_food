@@ -269,57 +269,57 @@ def send_text(message):
         bot.send_photo(message.chat.id, photo = open(Photo24, 'rb'), caption = who_i_am21)
     elif message.text.lower() == 'مأكولات الشام(1)':
         bot.send_location(message.chat.id, 33.520175,36.298052)
-        bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (1)
+        bot.send_message(message.chat.id, '''الأسم: مأكولات الشام _ عين الكرش
 مكان التواجد: شارع بغداد _ عين الكرش _ جانب المشفى العربي 
                         رقم التواصل : 2319300 \ 231324 \ 2319069 \ 0940840001''')
 
-    elif message.text.lower() == 'مأكولات الشام(2)':
+    elif message.text.lower() == 'مأكولات الشام _ شارع بغداد':
         bot.send_location(message.chat.id, 33.520175,36.298052)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (2)
 مكان التواجد: عين الكرش _ مقابل حلويات شيخ الحارة 
                         رقم التواصل : 2319300 \ 2313245 \ 2319069 \ 0940840001''')
 
-    elif message.text.lower() == 'مأكولات الشام(3)':
+    elif message.text.lower() == 'مأكولات الشام _ السادات':
         bot.send_location(message.chat.id, 33.51851,36.31033)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (3)
 مكان التواجد: شارع بغداد _ موقف السادات   
                         رقم التواصل : 4464440 \ 4444914 \ 4441155''')
 
-    elif message.text.lower() == 'مأكولات الشام(4)':
+    elif message.text.lower() == 'مأكولات الشام _ التضامن':
         bot.send_location(message.chat.id, 33.48146,36.30776)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (4)
 مكان التواجد: التضامن _ شارع نسرين _ مقابل مدرسة اسكندرون    
                         رقم التواصل : 6383333 \ 6382222''')
 
-    elif message.text.lower() == 'مأكولات الشام(5)':
+    elif message.text.lower() == 'مأكولات الشام _ دويلعة':
         bot.send_location(message.chat.id, 33.50412,36.31985)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (5)
 مكان التواجد: مفرق دويلعة _ بعد كنيسة مارلياس _ مقابل بن حسيب   
                         رقم التواصل :  4735558 \ 4735556''')
 
-    elif message.text.lower() == 'مأكولات الشام(6)':
+    elif message.text.lower() == 'مأكولات الشام _ كشكول':
         bot.send_location(message.chat.id, 33.49860,36.33405)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (6)
 مكان التواجد:  كشكول _ بناء الفارس   
                         رقم التواصل : 4736555 \ 4736444''')
 
-    elif message.text.lower() == 'مأكولات الشام(7)':
+    elif message.text.lower() == 'مأكولات الشام _ مليحة قريبا':
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (7)
 مكان التواجد: المليحة _ قريبا   
                         ''')
 
-    elif message.text.lower() == 'مأكولات الشام(8)':
+    elif message.text.lower() == 'مأكولات الشام _ دويلعة قريبا':
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (8)
 مكان التواجد: دويلعة _ قريبا   
                         ''')
 
-    elif message.text.lower() == 'مأكولات الشام(10)':
+    elif message.text.lower() == 'مأكولات الشام _ الصناعة':
         bot.send_location(message.chat.id, 33.50025,36.31063)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (10)
 مكان التواجد: الصناعة _ مقابل كراجات الست   
                         رقم التواصل : 5444156 \ 5444155 \ 5442236''')
 
-    elif message.text.lower() == 'مأكولات الشام(11)':
+    elif message.text.lower() == 'مأكولات الشام _ عين ترما':
         bot.send_location(message.chat.id, 33.51485,36.35198)
         bot.send_message(message.chat.id, '''الأسم: مأكولات الشام (11)
 مكان التواجد: عين ترما _ ساحة الخزان   
