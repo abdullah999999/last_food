@@ -22,11 +22,11 @@ def send_text(message):
 
     if message.text.lower() == 'أرقام الأفرع':
         keyboard2 = telebot.types.ReplyKeyboardMarkup(True)
-        keyboard2.row('مأكولات الشام(2)', 'مأكولات الشام(1)')
-        keyboard2.row('مأكولات الشام(4)', 'مأكولات الشام(3)')
-        keyboard2.row('مأكولات الشام(6)', 'مأكولات الشام(5)')
-        keyboard2.row('مأكولات الشام(8)', 'مأكولات الشام(7)')
-        keyboard2.row('مأكولات الشام(11)', 'مأكولات الشام(10)')
+        keyboard2.row('مأكولات الشام _ شارع بغداد', 'مأكولات الشام _ عين الكرش')
+        keyboard2.row('مأكولات الشام _ التضامن', 'مأكولات الشام _ السادات')
+        keyboard2.row('مأكولات الشام _ كشكول', 'مأكولات الشام _ دويلعة')
+        keyboard2.row('مأكولات الشام _ دويلعة قريبا', 'مأكولات الشام _ مليحة قريبا')
+        keyboard2.row('مأكولات الشام _ عين ترما', 'مأكولات الشام _ الصناعة')
         keyboard2.row('رجوع',)
         bot.send_message(message.chat.id, 'أختار الفرع الذي تريده :', reply_markup=keyboard2)
     elif message.text.lower() == 'الطعام':
