@@ -64,6 +64,7 @@ def send_text(message):
         bot.send_message(message.chat.id, who_i_am22)
     elif message.text.lower() == 'رجوع':
         keyboard = telebot.types.ReplyKeyboardMarkup(True)
+        keyboard.row('مأكولات الشام عين الكرش (Facebook)')
         keyboard.row('الطعام', 'أرقام الأفرع')
         keyboard.row('جديدنا', 'قوالب للمناسبات')
         keyboard.row('من نحن؟', 'شكاوي وإدارة')
