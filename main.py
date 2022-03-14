@@ -60,7 +60,8 @@ def send_text(message):
         bot.send_photo(message.chat.id, photo=open(Photo, 'rb'), caption=who_i_am)
     elif message.text == 'إدارة وشكاوي':
         who_i_am22 = '''للاستفسار عن أي ملاحظة أو شكوى التواصل على الرقم التالي :
-        0940840001'''
+        واتس أب : 0940840001
+        الرقم المباشر : '''
         bot.send_message(message.chat.id, who_i_am22)
     elif message.text.lower() == 'رجوع':
         keyboard = telebot.types.ReplyKeyboardMarkup(True)
